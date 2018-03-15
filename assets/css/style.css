@@ -1,0 +1,99 @@
+*{
+	font-family: "Oswald";
+}
+
+@font-face {
+	font-family: 'Droid';
+	src: url('../fonts/DroidSans.ttf');
+}
+
+.header-top { padding: 20px; }
+.form-inline { width: 100%; position: relative;}
+#search { padding-left: 35px; font-size: 12px; width: 100%; height: 35px; border-color: #333333}
+.btn-search { position: absolute; left: 10px ; background: transparent; color: #d73b20; padding: 0; font-size: 14px;}
+.free-shipping { color: #d73b20; margin-right: 20px;}
+.free-shipping.mobile {display: none; }
+.free-shipping .free-one { margin-bottom: 0; }
+.free-shipping .free-two { font-size: 12px; margin-bottom: 10px; }
+.cart-img { margin-right: 20px; }
+.cart-bag{ color: #b3b3b3; }
+.cart-num { color: #d73b20; font-weight: bold;}
+#header .mobile-button { display: none; }
+#header .header-bottom { background-color: #523468}
+#header .header-bottom .nav-link { color: #fff; }
+#header .header-bottom .header-or { font-weight: normal; color: #bda8bb; }
+#header .header-bottom .header-sign a { color: #FFF;}
+.potions-container { padding: 80px 0; }
+.potions-container .item { text-align: center; margin: 20px 0; }
+.potions-container img { width: 80%; }
+.potions-container .product-details { justify-content: center;}
+.potions-container .product-price { color: #d73b20; }
+#footer { background-color: #e6e6e6; padding: 30px;}
+#footer .links { width: 320px; }
+#footer .links li,
+#footer .social-links li { list-style: none; display: inline-block;}
+#footer .links li { margin-right: 15px; }
+#footer .links li a { color: #d73b20; text-transform: uppercase; font-size: 18px;}
+#footer .social-links li a { color: #53326a; font-size: 32px; margin-right: 25px; }
+#footer .container-newsletter { background-color: #FFF; padding: 30px; border-radius: 5px;}
+#footer .newsletter-title { font-style: italic; font-size: 15px;}
+#footer .newsletter-subtitle { font-size: 14px; margin-bottom: 15px; display: block; }
+#footer #newsletter { padding-left: 35px; font-size: 12px; width: 79%; height: 35px; margin-right: 1%; border-color: #333333;}
+#footer .btn-newsletter { width: 19%; background-color: #d73a1e; color: #fff; text-transform: uppercase;}
+#footer .copyright { padding-left: 40px; }
+#header .navbar-top { display: none; }
+#modal { background: #000; opacity: 1; }
+#modal img { width: 100%; }
+#modal #modal-container { width: 600px; margin: 0 auto; background: #FFF; position: absolute; top: 50%; left: calc(50% - 300px); padding: 25px;}
+#modal .product-name, #modal .product-effect,
+#modal .product-ingredients, #modal .product-price { width: 100%; display: block; margin-bottom: 15px; }
+#modal .product-add { width: auto; background-color: #d73a1e; color: #fff; text-transform: uppercase; font-size: 14px; border: 0; border-radius: 3px; padding: 3px 10px;}
+#modal .modal-close { position: absolute; right: 5px; z-index: 999; top: 5px;}
+
+@media screen and (max-width: 991px) {
+	#header .mobile-button { display: block; color: #50356a; font-size: 28px;background: transparent; border: 0;margin-right: 25px;}
+	#header .navbar-top { display: block; }
+	#header .navbar-top { background-color: #FFF; }
+	#header .navbar-top .mobile-button { display: inline-block; }
+	#header .navbar-top .btn-search { top: 5px; }
+	#header .navbar-top .form-inline  { display: inline-block; width: auto; }
+	#header .header-bottom { opacity: 0; visibility: hidden; top: 0; left: -250px; transition: all 1s ease; position: absolute; z-index: 999; height: 100%; background: #FFF;}
+	#header .header-bottom.show { opacity: 1; visibility: visible; left: 0; transition: all 1s ease; position: absolute; }
+
+	#header .header-bottom .container{ background-color: #523468; }
+	#header .header-search { display: none !important; }
+	#header .header-logo { justify-content: flex-start !important; }
+	.free-shipping.desktop {display: none; }
+	.free-shipping.mobile { display: block; background-color: #ececec; width: 100%; text-align: center;}
+	.free-shipping .free-one,
+	.free-shipping .free-two { display: inline-block; font-size: 12px; color: #616161; }
+	#modal .product-img { text-align: center; }
+	#modal img { width: 50%; }
+}
+@media screen and (max-width: 767px) {
+	#header .header-logo img { max-width: 100%; }			
+	.cart-bag { display: block; }
+	.header-cart {justify-content: flex-end !important;}
+	.potions-container h3 { text-align: center; }
+	.product-name,
+	.product-price { font-size: 12px; }
+	#footer .links { display: none; }
+	#footer .copyright { order: 2; padding-left: 15px; text-align: center;}
+	#footer .company-links { order: 1; }
+	#footer .social-links { text-align: center; padding-left: 0; margin: 20px 0; }
+	#footer .social-links li:last-child a { margin-right: 0; }
+	#modal .product-name {font size: 24px;}
+	#modal #modal-container { width: 90%; left: calc(50% - 45%); }
+}
+@media screen and (max-width: 535px) {
+	#footer { padding: 30px 0; }
+	#footer .container-newsletter { padding: 30px 10px; }
+	#footer #newsletter { width: 64%; }
+	#footer .btn-newsletter { width: 35%; }
+}
+@media screen and (max-width: 425px) {
+	#header .header-logo { padding-left: 0 }
+	.header-cart { padding-right: 0; }
+	.cart-img { margin-right: 0 }
+	#header .mobile-button { margin-right: 20px; }
+}
